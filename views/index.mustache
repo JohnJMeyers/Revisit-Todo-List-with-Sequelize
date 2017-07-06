@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo's</title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <br>
+    <form class="" action="/" method="post">
+      <input type="text" name="todo" value="" placeholder="Enter todo here">
+      <input type="submit" name="submit" for="todo" value="Add:">
+    </form>
+    <hr>
+    <form class="" action="/deleteAll" method="post">
+      <input class="deleteAll" type="submit" name="" value="DELETE ALL">
+    </form>
+    <br>
+    <br>
+    {{#tasks}}
+      <ul>
+        <div class="tasks">
+        <li class='list'>{{task}}</li>
+        <div class="tasks-bottom">
+          <a  class='inside'href="/task/{{id}}">edit</a>
+          <form class='inside' action="/delete" method="post">
+            <button type="submit" value="{{id}}" name="delete">delete</button>
+          </form>
+        </div>
+        </div>
+      </ul>
+    {{/tasks}}
+  </body>
+</html>

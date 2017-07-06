@@ -1,0 +1,23 @@
+.deleteAll {
+  color: white;
+  background-color: red;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+.inside {
+  margin-right: 2%;
+}
+
+.list {
+  margin-right: 2%;
+}
+
+.tasks-bottom {
+  display: flex;
+  margin-top: 10px;
+}
